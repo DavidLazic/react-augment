@@ -1,8 +1,7 @@
 # react-augment
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+[![Node version](https://img.shields.io/node/v/react-augment.svg?style=flat)](http://nodejs.org/download/)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
 > Augment your React component with multiple Higher Order Components
 
@@ -217,15 +216,5 @@ This way you can supply the array of your HOC namespaces so you don't have to im
 ## License
 
 MIT © [David Lazic]()
-
-
-[build-badge]: https://img.shields.io/travis/DavidLazic/react-augment/master.png?style=flat-square
-[build]: https://travis-ci.org/DavidLazic/react-augment
-
-[npm-badge]: https://img.shields.io/npm/v/DavidLazic/react-augment.png?style=flat-square
-[npm]: https://www.npmjs.org/package/DavidLazic/react-augment
-
-[coveralls-badge]: https://img.shields.io/coveralls/DavidLazic/react-augment/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/DavidLazic/react-augment
 
 [transform-decorators]: https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy
