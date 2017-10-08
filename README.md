@@ -1,6 +1,8 @@
 # react-augment
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+[![Travis][build-badge]][build]
+[![npm package][npm-badge]][npm]
+[![Coveralls][coveralls-badge]][coveralls]
 
 > Augment your React component with multiple Higher Order Components
 
@@ -217,12 +219,13 @@ This way you can supply the array of your HOC namespaces so you don't have to im
 MIT © [David Lazic]()
 
 
-[npm-image]: https://badge.fury.io/js/react-augment.svg
-[npm-url]: https://npmjs.org/package/react-augment
-[travis-image]: https://travis-ci.org/DavidLazic/react-augment.svg?branch=master
-[travis-url]: https://travis-ci.org/DavidLazic/react-augment
-[daviddm-image]: https://david-dm.org/DavidLazic/react-augment.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/DavidLazic/react-augment
-[coveralls-image]: https://coveralls.io/repos/DavidLazic/react-augment/badge.svg
-[coveralls-url]: https://coveralls.io/r/DavidLazic/react-augment
+[build-badge]: https://img.shields.io/travis/DavidLazic/react-augment/master.png?style=flat-square
+[build]: https://travis-ci.org/DavidLazic/react-augment
+
+[npm-badge]: https://img.shields.io/npm/v/DavidLazic/react-augment.png?style=flat-square
+[npm]: https://www.npmjs.org/package/DavidLazic/react-augment
+
+[coveralls-badge]: https://img.shields.io/coveralls/DavidLazic/react-augment/master.png?style=flat-square
+[coveralls]: https://coveralls.io/github/DavidLazic/react-augment
+
 [transform-decorators]: https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy
