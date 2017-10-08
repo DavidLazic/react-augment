@@ -1,7 +1,7 @@
-# react-augment
+# react-augment [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
-[![Node version](https://img.shields.io/node/v/react-augment.svg?style=flat)](http://nodejs.org/download/)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+[![NPM version][npm-image]][npm-url]
+
 
 > Augment your React component with multiple Higher Order Components
 
@@ -217,4 +217,6 @@ This way you can supply the array of your HOC namespaces so you don't have to im
 
 MIT © [David Lazic]()
 
+[npm-image]: https://badge.fury.io/js/react-augment.svg
+[npm-url]: https://npmjs.org/package/react-augment
 [transform-decorators]: https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy
