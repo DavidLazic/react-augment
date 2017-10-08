@@ -1,6 +1,6 @@
 {
   "name": "react-augment",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Augment React components with multiple Higher Order Components",
   "main": "lib/index.js",
   "module": "es/index.js",
