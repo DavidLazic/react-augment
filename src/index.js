@@ -20,7 +20,7 @@ const errors = {
         `TypeError: Register method invoked with argument type '${prop.invoked}', expected '${prop.expected}'`
     ),
     existenceError: prop => (
-        `ExistenceError: Cannot find '${props.augmentor}' augmenter`
+        `ExistenceError: Cannot find '${prop.augmentor}' augmenter`
     )
 };
 
