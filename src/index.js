@@ -20,7 +20,7 @@ const errors = {
         `TypeError: Register method invoked with argument type '${prop.invoked}', expected '${prop.expected}'`
     ),
     existenceError: prop => (
-        `ExistenceError: Cannot find '${prop.augmentor}' augmenter`
+        `ExistenceError: Cannot find '${prop.augmenter}' augmenter`
     )
 };
 
@@ -119,11 +119,11 @@ const annotate = augmenters =>
  * @private
  */
 const resolveAugmenters = augmenters =>
-    augmenters.map(augmentor =>
-        isFunction(augmentor) ?
-            augmentor :
-            isAnnotated(augmentor) || throwError(errors.existenceError({
-                augmentor
+    augmenters.map(augmenter =>
+        isFunction(augmenter) ?
+            augmenter :
+            isAnnotated(augmenter) || throwError(errors.existenceError({
+                augmenter
             })));
 
 /**
