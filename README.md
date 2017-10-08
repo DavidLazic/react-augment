@@ -11,6 +11,44 @@
 npm install react-augment --save
 ```
 
+## Why
+
+When you're working with Higher Order Components, most general approach to augment a Component is to invoke a HOC and pass the Component as an argument.
+
+```javascript
+import { someHOC } from 'someHOC';
+
+class Example extends Component () {}
+
+export default someHOC(Component);
+````
+
+In case of two or more HOCs, you can set them up in the following way:
+
+```javascript
+import { someHOC } from 'someHOC';
+import { someOtherHOC } from 'someOtherHOC';
+
+class Example extends Component () {}
+
+export default someHOC(someOtherHOC(Component));
+```
+
+What `react-augment` enables you to do is to augment your Component by composing multiple HOCs in a more robust, lexical way.
+
+```javascript
+import { augmentComponent } from 'react-augment';
+
+import { someHOC } from 'someHOC';
+import { someOtherHOC } from 'someOtherHOC';
+
+@augmentComponent([
+    someHOC,
+    someOtherHOC
+])
+export default class Example extends Component {}
+```
+
 ## Usage
 
 `@augmentComponent`
