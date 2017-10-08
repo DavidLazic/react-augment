@@ -168,7 +168,7 @@ Augment.register(HOC);
 
 ```
 
-This way you can supply the array of your HOC namespaces so you don't have to import them in each of the components
+This way you can supply the array of your HOC namespaces so you don't have to import them in each of the components.
 
 **instead of**
 
