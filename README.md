@@ -34,7 +34,7 @@ npm install react-augment --save
 
 | Params | Type    | Description |
 | ------ |:-------:| ----------- |
-| HOCS   | Object  | Config object containing HOCs to be annotated. *Notice* Config `key` will be used as annotation
+| HOCS   | Object  | Config object containing HOCs to be annotated. **Notice:** Config `key` will be used as annotation.
 
 > Augment.component([HOC, HOC], {})
 
@@ -48,7 +48,7 @@ npm install react-augment --save
 You'd like to augment your Example component with a HOC that handles navigation
 and some other HOC.
 
-```
+```javascript
 |-- components/
     |-- Example.js
 
@@ -60,13 +60,13 @@ and some other HOC.
 
 ```
 
-```
-// /components/Example.js
+```javascript
+// components/Example.js
 
 export default class Example extends Component {}
 ```
 
-```
+```javascript
 // containers/hoc/useNavigation.js
 
 import React, { Component } from 'react';
@@ -110,7 +110,7 @@ export const useNavigation = (WrappedComponent, optionalConfig) =>
     };
 ```
 
-```
+```javascript
 // containers/hoc/index.js
 
 import { useNavigation } from './useNavigation';
@@ -128,10 +128,12 @@ There are two ways you can implement react-augment:
 - use `@augmentComponent` decorator
 - use `Augment` object.
 
-*Note* To use a decorator you'll need to install [transform-decorators-legacy](transform-decorators) babel plugin.
-*Note* Order of the HOC is irrelevant
+**Note:** To use a decorator you'll need to install [transform-decorators-legacy](transform-decorators) babel plugin.
 
-```
+
+**Note:** Order of the HOC is irrelevant
+
+```javascript
 import { augmentComponent } from 'react-augment';
 import HOC from 'containers/hoc';
 
@@ -142,7 +144,7 @@ import HOC from 'containers/hoc';
 export default class Example extends Component {}
 ```
 
-```
+```javascript
 import { Augment } from 'react-augment';
 import HOC from 'containers/hoc';
 
@@ -158,7 +160,7 @@ export default Augment.component(Example, [
 
 You can register all your HOCs' namespaces at one of the main component wrappers (such as App)
 
-```
+```javascript
 import { Augment } from 'react-augment';
 import HOC from 'containers/hoc';
 
@@ -170,8 +172,7 @@ This way you can supply the array of your HOC namespaces so you don't have to im
 
 **instead of**
 
-```
-
+```javascript
 [
     HOC.useNavigation,
     HOC.someOtherHOC
@@ -180,7 +181,7 @@ This way you can supply the array of your HOC namespaces so you don't have to im
 
 **use**
 
-```
+```javascript
 [
     'useNavigation',
     'someOtherHOC'
