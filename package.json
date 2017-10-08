@@ -1,7 +1,7 @@
 {
   "name": "react-augment",
   "version": "1.0.0",
-  "description": "react-augment React library",
+  "description": "react-augment library for augmenting components with Higher Order Components",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
